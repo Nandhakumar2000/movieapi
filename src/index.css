@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700');
+
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+}
+
+body{ background: #3598dc; }
+
+.cont{
+  position: relative;
+  width: 25%;
+  padding: 10px 25px;
+  margin: 10vh auto;
+  background: #fff;
+  border-radius: 8px;
+}
+
+.form{ width: 100%; height: 100%; }
+
+h1, h2, .user, .pass{ 
+  text-align: center;
+  display: block;
+}
+
+h1{ 
+  color: #606060;
+  font-weight: bold;
+  font-size: 40px;
+  margin: 30px auto;
+}
+
+h3{
+  color: #f00;
+  text-align: center;
+}
+.user, .pass, .login{
+  width: 100%;
+  height: 45px;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: lighter;
+  margin-bottom: 30px;
+}
+
+.user, .pass{ background: #ecf0f1; }
+
+.login{
+  color: #fff;
+  cursor: pointer;
+  margin-top: 20px;
+  background: #3598dc;
+  transition: background 0.4s ease;
+}
+
+.login:hover{ background: #3570dc; }
+
+@media only screen and (min-width : 280px) {
+  .cont{ width: 90% }
+}
+
+@media only screen and (min-width : 480px) {
+  .cont{ width: 60% }
+}
+
+@media only screen and (min-width : 768px) {
+  .cont{ width: 40% }
+}
+
+@media only screen and (min-width : 992px) {
+  .cont{ width: 30% }
+}
+
+h2{ color: #fff; margin-top: 25px; }
+.btn {
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 12px 16px;
+  font-size: 16px;
+  cursor: pointer;
+}
+/* Darker background on mouse-over */
+
+
+#modal_init_button {
+  background-color: var(--bg-Color);
+  border: none;
+  color: white;
+  padding: 12px 16px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: blue;
+}
+
+.modal_input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.modal_button {
+  background-color: blue;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.modal_button:hover {
+  opacity: 0.8;
+}
+
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 60%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+.modal {
+  display: block;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+  padding-top: 60px;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto;
+  border: 1px solid #888;
+  width: 80%;
+}
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)}
+  to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+  from {transform: scale(0)}
+  to {transform: scale(1)}
+}
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+#autocomplete {
+  width: 100%;
+}
+
+#myTable {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#myTable td, #myTable th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#myTable tr:nth-child(even){background-color: #f2f2f2;}
+
+#myTable tr:hover {background-color: #ddd;}
+
+#myTable th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color:  #3598dc;;
+  color: white;
+}
